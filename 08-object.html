@@ -11,10 +11,19 @@
   <script>
     const product = {
         name: 'socks',
-        price: 200
+        price: 200,
+        ['delivery-time']: '1-day',
+        rating:{
+          stars: 4.5,
+          count: 87
+        },
+        fun : function function1() {
+          console.log('Hello')
+        }
     };
     console.log(product);
     console.log(product.name);
+    console.log(['delivery-time'])
 
     product.name = 'shorts';
     
